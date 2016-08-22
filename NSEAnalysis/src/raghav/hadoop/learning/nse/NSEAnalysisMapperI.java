@@ -97,7 +97,7 @@ AARVEEDEN,EQ,46.6,47.4,44.6,45,45.4,46.4,5300,241291.9,31-OCT-2014,97,INE273D010
 		symbol = lineparts[0];
 		if(symbol.equals(new String("SYMBOL")))
 		{
-			System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&Ignoring line now... "+symbol);
+			System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&Ignoring line now... "+symbol);
 		}
 		else
 		{
