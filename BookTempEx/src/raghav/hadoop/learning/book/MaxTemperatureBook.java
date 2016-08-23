@@ -7,7 +7,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-public class MaxTemperature {
+public class MaxTemperatureBook {
 	public static void main(String[] args) throws Exception {
 		if (args.length != 2) {
 			System.err
@@ -15,7 +15,7 @@ public class MaxTemperature {
 			System.exit(-1);
 		}
 		Job job = new Job();
-		job.setJarByClass(MaxTemperature.class);
+		job.setJarByClass(MaxTemperatureBook.class);
 		job.setJobName("Max temperature");
 		FileInputFormat.addInputPath(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
